@@ -62,4 +62,6 @@ if [ -f /root/wget-log ]; then
 else
 	true
 fi
+clear;
 echo -e "\033[1;32m ROOT ACTIVATED SUCCESSFULLY!"
+echo ""
