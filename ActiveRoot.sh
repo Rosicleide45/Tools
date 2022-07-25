@@ -40,8 +40,10 @@ echo -e "\033[1;31m════════════════════�
 echo ""
 echo -e "             \033[1;31mWARNING! \033[1;33mTHIS SCRIPT WILL GO !\033[0m"
 echo ""
-echo -e "\033[1;33m  ACTIVATE YOUR ROOT ACCESS\033[0m"
+echo -e "             \033[1;33m  ACTIVATE YOUR ROOT ACCESS\033[0m"
 echo ""
 echo -e "\033[1;31m≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×\033[0m"
-echo ""
-echo -e "\033[1;32m FIRST OF THE sudo -i COMMAND THEN START THIS SCRIPT TO SET THE ROOT PASSWORD.\033[0m"; sleep 2s; passwd
+echo ""; 
+sleep 2s; 
+passwd;
+clear;
