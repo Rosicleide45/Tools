@@ -13,6 +13,12 @@ Tools For Linux (Scripts)
     apt install wget -y; 
     ```
 - 3. Set permissions and password:
-    ```
-    bash <(wget -qO- https://raw.githubusercontent.com/WebManagerSSH/Tools/main/ActiveRoot.sh)
-    ```
+    - 3.1 Option bash:
+        ```
+        bash <(wget -qO- https://raw.githubusercontent.com/WebManagerSSH/Tools/main/ActiveRoot.sh)
+        ```
+    - 3.2 Option wget:
+        ```
+        wget https://raw.githubusercontent.com/WebManagerSSH/Lamp/main/ActiveRoot.sh; 
+        chmod 777 ActiveRoot.sh* && ./ActiveRoot.sh*
+        ```
