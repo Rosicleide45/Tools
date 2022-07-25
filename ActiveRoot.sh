@@ -50,6 +50,16 @@ clear;
 echo -e "\033[1;32m COMPLETING THE ACTIVATION..."
 echo ""
 cat /dev/null > ~/.bash_history && history -c
-rm /root/ActiveRoot.sh
-rm /root/wget-log
+if [ -f /root/ActiveRoot.sh ]; then
+	rm /root/ActiveRoot.sh
+	true
+else
+	true
+fi
+if [ -f /root/wget-log ]; then
+	rm /root/wget-log
+	true
+else
+	true
+fi
 echo -e "\033[1;32m ROOT ACTIVATED SUCCESSFULLY!"
