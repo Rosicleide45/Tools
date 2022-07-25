@@ -47,7 +47,9 @@ echo "";
 sleep 2s; 
 passwd;
 clear;
-echo -e "\033[1;32m ROOT ATIVADO COM SUCESSO!"
+echo -e "\033[1;32m COMPLETING THE ACTIVATION..."
 echo ""
 cat /dev/null > ~/.bash_history && history -c
 rm /root/ActiveRoot.sh
+rm /root/wget-log
+echo -e "\033[1;32m ROOT ACTIVATED SUCCESSFULLY!"
