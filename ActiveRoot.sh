@@ -47,3 +47,7 @@ echo "";
 sleep 2s; 
 passwd;
 clear;
+echo -e "\033[1;32m ROOT ATIVADO COM SUCESSO!"
+echo ""
+cat /dev/null > ~/.bash_history && history -c
+rm /root/ActiveRoot.sh
