@@ -35,7 +35,7 @@ echo ""
 service ssh restart > /dev/null
 clear; 
 echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
-tput setaf 7 ; tput setab 3 ; tput bold ; printf '%40s%s%-12s\n' "ROOT ACTIVATION V1.0" ; tput sgr0
+tput setaf 7 ; tput setab 3 ; tput bold ; printf '%40s%s%-12s\n' "ROOT ACTIVATION" ; tput sgr0
 echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
 echo ""
 echo -e "             \033[1;31mWARNING! \033[1;33mTHIS SCRIPT WILL GO !\033[0m"
@@ -47,8 +47,6 @@ echo "";
 sleep 2s; 
 passwd;
 clear;
-echo -e "\033[1;32m COMPLETING THE ACTIVATION..."
-echo ""
 cat /dev/null > ~/.bash_history && history -c
 if [ -f /root/ActiveRoot.sh ]; then
 	rm /root/ActiveRoot.sh
