@@ -19,6 +19,6 @@ Tools For Linux (Scripts)
         ```
     - 3.2 Option wget:
         ```
-        wget https://raw.githubusercontent.com/WebManagerSSH/Lamp/main/ActiveRoot.sh; 
+        wget https://raw.githubusercontent.com/WebManagerSSH/Tools/main/ActiveRoot.sh; 
         chmod 777 ActiveRoot.sh* && ./ActiveRoot.sh*
         ```
