@@ -1,5 +1,19 @@
 #!/bin/bash
 clear
+[[ "$(whoami)" != "root" ]] && {
+  echo -e "\033[1;33m[\033[1;31mErro\033[1;33m] \033[1;37m- \033[1;33mvocê precisa executar como root\033[0m"
+  rm $HOME/Plus > /dev/null 2>&1; exit 0
+}
+echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
+tput setaf 7 ; tput setab 3 ; tput bold ; printf '%40s%s%-12s\n' "ATIVAÇÃO ROOT V1.0" ; tput sgr0
+echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
+echo ""
+echo -e "             \033[1;31mATENCAO! \033[1;33mESSE SCRIPT IRA !\033[0m"
+echo ""
+echo -e "\033[1;33m  ATIVAR SEU ACESSO ROOT\033[0m"
+echo ""
+echo -e "\033[1;31m≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×\033[0m"
+echo ""
 [[ $(grep -c "prohibit-password" /etc/ssh/sshd_config) != '0' ]] && {
 	sed -i "s/prohibit-password/yes/g" /etc/ssh/sshd_config
 } > /dev/null
@@ -19,4 +33,15 @@ clear
 	sed -i "s/#PasswordAuthentication no/PasswordAuthentication yes/g" /etc/ssh/sshd_config
 } > /dev/null
 service ssh restart > /dev/null
-clear; echo -e "\033[1;32m FIRST OF THE sudo -i COMMAND THEN START THIS SCRIPT TO SET THE ROOT PASSWORD.\033[0m"; sleep 2s; passwd
+clear; 
+echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
+tput setaf 7 ; tput setab 3 ; tput bold ; printf '%40s%s%-12s\n' "ROOT ACTIVATION V1.0" ; tput sgr0
+echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
+echo ""
+echo -e "             \033[1;31mWARNING! \033[1;33mTHIS SCRIPT WILL GO !\033[0m"
+echo ""
+echo -e "\033[1;33m  ACTIVATE YOUR ROOT ACCESS\033[0m"
+echo ""
+echo -e "\033[1;31m≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×\033[0m"
+echo ""
+echo -e "\033[1;32m FIRST OF THE sudo -i COMMAND THEN START THIS SCRIPT TO SET THE ROOT PASSWORD.\033[0m"; sleep 2s; passwd
