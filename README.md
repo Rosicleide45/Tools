@@ -7,7 +7,7 @@ Tools For Linux (Scripts)
     ```
     sudo -i
     ```
-- 2 Update system (Optional) - IMPORTANT:
+- 2 Update system - IMPORTANT:
     ```
     apt update -y; 
     ```
