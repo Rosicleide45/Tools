@@ -10,10 +10,7 @@ cd /etc; rm -rf ssl stunnel; clear
 echo -e "Replacing SSL certificates..."
 sleep 3
 wget --no-check-certificate https://github.com/WebManagerSSH/Tools/blob/main/files/ssl.zip?raw=true
-unzip ssl.zip; rm ssl.zip; clear
+unzip ssl.zip; rm ssl.zip; rm SSL.sh; clear
 echo -e "SSL certificate update completed."
 echo -e "Restart the server for the changes "
 echo -e "take effect immediately!!"
-echo ""
-echo -e "Powered by WMSSH"
-cd; rm SSL.sh
