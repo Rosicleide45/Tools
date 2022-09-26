@@ -4,6 +4,10 @@ clear
   echo -e "\033[1;33m[\033[1;31mErro\033[1;33m] \033[1;37m- \033[1;33mvocê precisa executar como root\033[0m"
   rm $HOME/Plus > /dev/null 2>&1; exit 0
 }
+clear
+echo -e "UPDATING REPOSITORS, PLEASE WAIT..."
+sleep 3
+apt update; apt upgrade -y; apt install wget -y; clear
 echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
 tput setaf 7 ; tput setab 3 ; tput bold ; printf '%40s%s%-12s\n' "ATIVAÇÃO ROOT" ; tput sgr0
 echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
