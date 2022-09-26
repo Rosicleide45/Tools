@@ -1,27 +1,23 @@
 ## Tools
 Tools For Linux (Scripts)
-
-# Enable Root Access And Set Password:
-
-- 1 Access the ROOT user:
+- Access the ROOT user (Recommended/Some is mandatory):
     ```
     sudo -i
     ```
-- 2 Update system - IMPORTANT:
-    ```
-    apt update -y; 
-    ```
-- 3 Set permissions and password:
 
-    ATTENTION: If an error occurs in this next step, execute the following command:
+# Enable Root Access And Set Password:
+
+- 1 Access the ROOT user (Mandatory):
     ```
-    apt install wget -y; 
+    sudo -i
     ```
-    - 3.1 Option bash:
+- 2 Set permissions and password:
+
+    - 2.1 Option bash:
         ```
         bash <(wget -qO- https://raw.githubusercontent.com/WebManagerSSH/Tools/main/files/ActiveRoot.sh)
         ```
-    - 3.2 Option wget:
+    - 2.2 Option wget:
         ```
         wget https://raw.githubusercontent.com/WebManagerSSH/Tools/main/files/ActiveRoot.sh; 
         chmod 777 ActiveRoot.sh* && ./ActiveRoot.sh*
