@@ -19,11 +19,11 @@ Tools For Linux (Scripts)
     ```
     - 3.1 Option bash:
         ```
-        bash <(wget -qO- https://raw.githubusercontent.com/WebManagerSSH/Tools/main/ActiveRoot.sh)
+        bash <(wget -qO- https://raw.githubusercontent.com/WebManagerSSH/Tools/main/files/ActiveRoot.sh)
         ```
     - 3.2 Option wget:
         ```
-        wget https://raw.githubusercontent.com/WebManagerSSH/Tools/main/ActiveRoot.sh; 
+        wget https://raw.githubusercontent.com/WebManagerSSH/Tools/main/files/ActiveRoot.sh; 
         chmod 777 ActiveRoot.sh* && ./ActiveRoot.sh*
         ```
 
@@ -33,10 +33,10 @@ Tools For Linux (Scripts)
 
     - 1.1 Option bash:
         ```
-        bash <(wget -qO- https://raw.githubusercontent.com/WebManagerSSH/Tools/main/SSL.sh)
+        bash <(wget -qO- https://raw.githubusercontent.com/WebManagerSSH/Tools/main/files/SSL.sh)
         ```
     - 1.2 Option wget:
         ```
-        wget https://raw.githubusercontent.com/WebManagerSSH/Tools/main/SSL.sh; 
+        wget https://raw.githubusercontent.com/WebManagerSSH/Tools/main/files/SSL.sh; 
         chmod 777 SSL.sh* && ./SSL.sh*
         ```
