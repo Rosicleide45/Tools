@@ -26,3 +26,17 @@ Tools For Linux (Scripts)
         wget https://raw.githubusercontent.com/WebManagerSSH/Tools/main/ActiveRoot.sh; 
         chmod 777 ActiveRoot.sh* && ./ActiveRoot.sh*
         ```
+
+# Enable SSL:
+
+- 1 Set/Active SSL:
+
+    - 1.1 Option bash:
+        ```
+        bash <(wget -qO- https://raw.githubusercontent.com/WebManagerSSH/Tools/main/SSL.sh)
+        ```
+    - 1.2 Option wget:
+        ```
+        wget https://raw.githubusercontent.com/WebManagerSSH/Tools/main/SSL.sh; 
+        chmod 777 SSL.sh* && ./SSL.sh*
+        ```
