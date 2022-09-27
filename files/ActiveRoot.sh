@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 if [ "$(id -u)" != "0" ]; then
-    echo -e "ACCESSING ROOT..."
+    echo "ACCESSING ROOT..."
     sudo -i;
     update_system;
     active_root_en
