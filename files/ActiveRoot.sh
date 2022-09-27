@@ -6,7 +6,6 @@ clear
 	sudo -i;
 	sleep 1
 }
-clear
 echo -e "UPDATING REPOSITORS, PLEASE WAIT..."
 sleep 3
 apt update; apt upgrade -y; apt install wget -y; clear
