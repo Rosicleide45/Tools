@@ -1,7 +1,6 @@
 #!/bin/bash
  
 torcer(){
-    clear;
     echo $1 
 }
  
@@ -21,3 +20,4 @@ executar(){
 }
  
 executar
+clear;
