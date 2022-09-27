@@ -1,10 +1,9 @@
 #!/bin/bash
 clear
 [[ "$(whoami)" != "root" ]] && {
-	clear
 	echo -e "ACCESSING ROOT..."
 	sudo -i
-}
+} > /dev/null
 echo -e "UPDATING REPOSITORS, PLEASE WAIT..."
 sleep 3
 apt update; apt upgrade -y; apt install wget -y; clear
