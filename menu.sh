@@ -11,10 +11,10 @@ executar(){
    do
       echo "Preparando para iniciar $opt..."
       case $opt in
-         "Active root") torcer "Vai Corinthians!!!";;
-         "Active SSL") torcer "Vai São Paulo!!!";;
-         "SAIR") break;;
-         *) echo "Opção inválida ($REPLY)";;
+         "Active root") torcer "Vai Corinthians!!!" ;;
+         "Active SSL") torcer "Vai São Paulo!!!"; ;
+         "SAIR") break ;;
+         *) echo "Opção inválida ($REPLY)" ;;
       esac
    done
 }
