@@ -1,10 +1,7 @@
 #!/bin/bash
   
 torcer(){
-    echo $1 
-}
- 
-executar(){
+   clear;
    echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
    tput setaf 7 ; tput setab 3 ; tput bold ; printf '%40s%s%-12s\n' "MENU OF TOOLS" ; tput sgr0
    echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
@@ -15,7 +12,10 @@ executar(){
    echo ""
    echo -e "\033[1;31m≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×\033[0m"
    echo ""; 
-   sleep 2s; 
+   echo $1 
+}
+ 
+executar(){
    PS3='Select which tool you want to use: '
    options=("Update system" "Access root" "Active root" "Active SSL" "Go out")
    select opt in "${options[@]}"
