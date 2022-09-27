@@ -3,8 +3,7 @@ clear
 [[ "$(whoami)" != "root" ]] && {
 	clear
 	echo -e "ACCESSING ROOT..."
-	sudo -i;
-	sleep 1
+	sudo -i
 }
 echo -e "UPDATING REPOSITORS, PLEASE WAIT..."
 sleep 3
