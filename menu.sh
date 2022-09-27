@@ -23,6 +23,17 @@ executar(){
    done
 }
  
-clear;
-executar
-clear;
+	clear; 
+	echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
+	tput setaf 7 ; tput setab 3 ; tput bold ; printf '%40s%s%-12s\n' "MENU OF TOOLS" ; tput sgr0
+	echo -e "\033[1;31m════════════════════════════════════════════════════\033[0m"
+	echo ""
+	echo -e "             \033[1;31mWARNING! \033[1;33mTHIS SCRIPT WILL GO !\033[0m"
+	echo ""
+	echo -e "             \033[1;33m  ACTIVATE YOUR ROOT ACCESS\033[0m"
+	echo ""
+	echo -e "\033[1;31m≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×≠×\033[0m"
+	echo ""; 
+	sleep 2s; 
+ executar
+ clear;
