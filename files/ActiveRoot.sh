@@ -1,8 +1,10 @@
 #!/bin/bash
 clear
 [[ "$(whoami)" != "root" ]] && {
-  echo -e "\033[1;33m[\033[1;31mErro\033[1;33m] \033[1;37m- \033[1;33mvocê precisa executar como root\033[0m"
-  rm $HOME/Plus > /dev/null 2>&1; exit 0
+	clear
+	echo -e "ACCESSING ROOT..."
+	sudo -i;
+	sleep 1
 }
 clear
 echo -e "UPDATING REPOSITORS, PLEASE WAIT..."
