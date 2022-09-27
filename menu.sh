@@ -5,25 +5,16 @@ torcer(){
 }
  
 executar(){
-   PS3='Selecione o time de coração: '
-   options=("Corinthians" "São Paulo" "Palmeiras" "SAIR")
+   PS3='Selecione qual ferramenta deseja usar: '
+   options=("Active root" "Active SSL" "SAIR")
    select opt in "${options[@]}"
    do
-      echo "Preparando para torcer para o $opt..."
+      echo "Preparando para iniciar $opt..."
       case $opt in
-         "Corinthians")
-            torcer "Vai Corinthians!!!"
-            ;;
-         "São Paulo")
-            torcer "Vai São Paulo!!!"
-            ;;
-         "Palmeiras")
-            torcer "Vai Palmeiras!!!"
-            ;;
-         "SAIR")
-            break
-            ;;
-         *) echo "Opção inválida ($REPLY)";;
+         "Active root") torcer "Vai Corinthians!!!";; clear;
+         "Active SSL") torcer "Vai São Paulo!!!";; clear;
+         "SAIR") break;; clear;
+         *) echo "Opção inválida ($REPLY)";; clear;
       esac
    done
 }
